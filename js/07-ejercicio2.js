@@ -26,6 +26,16 @@ Mostrar en consola el número de consulta y la hora.
 
 Llamar a la función varias veces para probar. */
 
-let horaActual = new Date().toLocaleTimeString()
 
-console.log(horaActual)
+let contador = 0
+
+function mostrarHora(){
+    contador++
+
+    let horaActual = new Date().toLocaleTimeString()
+    console.log(`Consulta #${contador} - Hora Actual: ${horaActual}`)
+}
+
+
+
+mostrarHora()
